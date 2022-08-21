@@ -56,20 +56,18 @@ const AppNavigator = () => {
                 ),
             }}
         >
-
+             <Tab.Screen name="Search" component={Search} options={{
+                tabBarIcon: ({color, size}) => <Feather name="search" size={size} color={color} />
+            }} />
             <Tab.Screen name="Home" component={Home} options={{
                 tabBarIcon: ({color, size}) => <Entypo name="home" size={size} color={color} />
             }}/>
             <Tab.Screen name="Stats" component={Stats} options={{
                 tabBarIcon: ({color, size}) => <Ionicons name="stats-chart" size={size} color={color} />
             }} />
-           
-            {/* <Tab.Screen name="Stats" component={Stats} options={{
-                tabBarIcon: ({color, size}) => <Ionicons name="stats-chart" size={size} color={color} />
-            }} /> */}
-            <Tab.Screen name="Search" component={Search} options={{
+            {/* <Tab.Screen name="Search" component={Search} options={{
                 tabBarIcon: ({color, size}) => <Feather name="search" size={size} color={color} />
-            }} />
+            }} /> */}
             <Tab.Screen name="Profile" component={Profile} options={{
                 tabBarIcon: ({color, size}) => <MaterialCommunityIcons name="account-circle-outline" size={size} color={color} />
             }} />
